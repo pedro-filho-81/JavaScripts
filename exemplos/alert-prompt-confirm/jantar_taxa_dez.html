@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jantar Taxa 10%</title>
+  </head>
+  <body>
+    <h1>Jantar Taxa de 10%</h1>
+    <script>
+      /*
+        c) Elaborar um programa que leia o valor de um jantar. Calcule e 
+        informe o valor da taxa do garçom (10%) e o valor total a ser pago.
+        Iepsen, Edécio Fernando. Lógica de Programação e Algoritmos com JavaScript - 2ª Edição: Uma introdução à programação de computadores com exemplos e exercícios para iniciantes (Portuguese Edition) (p. 47). Novatec Editora. Edição do Kindle. 
+    */
+
+      // entrada dos dados
+      const val_jantar = Number(prompt('Informe o valor do jantar: '))
+      const taxa_garson = val_jantar * 0.1
+      const val_total = val_jantar + taxa_garson
+
+      /*
+      – Uso do toFixed() para determinar o número de casas decimais das respostas.
+      */
+
+      alert(
+        `Despesas:\nValor do Jantar: R$${val_jantar.toFixed(
+          2
+        )},\ntaxa do Garçon: R$${taxa_garson.toFixed(
+          2
+        )}\nValor Total R$${val_total.toFixed(2)}`
+      )
+    </script>
+  </body>
+</html>
