@@ -1,8 +1,8 @@
-// cria referência ao formulário e aos elementos h3 e h3
+// cria referência ao formulário e aos elementos h3 e h4
 const frm = document.querySelector('form')
 // cria referencia ao h3 do Html
 const resposta1 = document.querySelector('h3')
-// cria referência ao h3
+// cria referência ao h4
 const resposta2 = document.querySelector('h4')
 
 // cria um 'ouvinte' de evento,
