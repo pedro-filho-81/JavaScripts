@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desconto Loja</title>
+  </head>
+  <body>
+    <h1>Desconto Loja</h1>
+    <script>
+      const valor_produto = Number(prompt('Valor do produto R$ '))
+      const valor_avista = valor_produto - valor_produto * 0.1
+      const vl_prazo = valor_produto / 3
+
+      alert(
+        `Preço R$ ${valor_produto.toFixed(
+          2
+        )}\nValor à vista R$ ${valor_avista.toFixed(
+          2
+        )}\nOu 3x de R$ ${vl_prazo.toFixed(2)}`
+      )
+    </script>
+  </body>
+</html>
