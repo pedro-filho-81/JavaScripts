@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(105, 240, 105);
+}
+
+#container {
+  background-color: rgb(66, 66, 183);
+  color: white;
+  width: bold;
+  width: 600px;
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  font-size: 13px;
+}
+
+/* Cria o local das respostas */
+#outResp2 {
+  margin: auto;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+span {
+  color: rgb(234, 13, 13);
+}
