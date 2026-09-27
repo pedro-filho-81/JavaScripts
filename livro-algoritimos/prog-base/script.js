@@ -1,7 +1,9 @@
 // vincula com o formulário
 const frm = document.querySelector('form')
-// vincula com o h4 para resposta
-const resp = document.querySelector('#outResp')
+
+// vincula com o h2 para resposta
+const resp1 = document.querySelector('#outResp1')
+const resp2 = document.querySelector('#outResp2')
 
 frm.addEventListener('submit', e => {
   // recebe os valores dos campos do formulário
@@ -12,7 +14,8 @@ frm.addEventListener('submit', e => {
   const vl_pagar = (tempo_uso * vl_minutos) / 15
 
   // exibir os resultado
-  resp.innerText = `Valor a Pagar R$ ${vl_pagar.toFixed(2)}`
+  resp1.innerText = `Valor a Pagar R$ ${vl_pagar.toFixed(2)}`
+  resp2.innerText = `Respostas`
 
   e.preventDefault()
 })

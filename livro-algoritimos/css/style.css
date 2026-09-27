@@ -12,17 +12,27 @@ body {
   margin: auto;
 }
 
+pre {
+  font-size: 18px;
+}
+
+label {
+  font-size: 20px;
+}
+
 input {
-  font-size: 13px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 /* Cria o local das respostas */
-#outResp2 {
+#outResp1 #outResp2 {
   margin: auto;
-  background-color: white;
+  background-color: red;
+  color: black;
   width: 300px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 span {

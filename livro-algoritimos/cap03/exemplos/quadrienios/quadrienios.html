@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadriênio</title>
+    <!-- Adiciona o CSS -->
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Quadriênio</h1>
+      <pre>
+      a) Elaborar um programa para uma empresa que leia o 
+      salário e o tempo que um funcionário trabalha na 
+      empresa. Sabendo que a cada 4 anos (quadriênio) o 
+      funcionário recebe um acréscimo de 1% no salário, 
+      calcule e informe o número de quadriênios a que o 
+      funcionário tem direito e o salário final.    
+      </pre>
+
+      <h2>Quadriênio</h2>
+
+      <form>
+        <p>
+          <label for="salario">Salário R$ </label><br />
+          <input
+            type="number"
+            id="inSal"
+            name="salario"
+            min="0"
+            step="0.01"
+            required
+          />
+        </p>
+        <p>
+          <label for="tempo">Tempo trabalhado(anos):</label> <br />
+          <input type="number" id="inTempo" name="tempo" required />
+        </p>
+        <p>
+          <input type="submit" value="Calcular Quadriênio" />
+        </p>
+      </form>
+
+      <h2 id="outResp1"></h2>
+      <h2 id="outResp2"></h2>
+    </div>
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap03/exemplos/quadrienios/script.js"></script>
+  </body>
+</html>
