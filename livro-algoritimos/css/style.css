@@ -25,14 +25,22 @@ input {
   font-size: 15px;
 }
 
-/* Cria o local das respostas */
-#outResp1 #outResp2 {
+div#resposta {
+  background-color: yellow;
+  width: 500px;
   margin: auto;
-  background-color: red;
-  color: black;
+}
+
+/* Cria o local das respostas */
+h2#outResp1 h2#outResp2 {
+  margin: auto;
   width: 300px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 25px;
+}
+
+h2#outResp1 {
+  color: black;
 }
 
 span {
