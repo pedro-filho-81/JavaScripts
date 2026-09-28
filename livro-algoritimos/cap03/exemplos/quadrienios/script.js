@@ -12,21 +12,16 @@ frm.addEventListener('submit', e => {
 
   // variável recebe o valor inteiro do tempo
   let quadrienio = Math.floor(tempo / 4)
+  // calcular bonos
+  let bonos = salario * 0.01 * quadrienio
+  // calcular novo salário
+  const novo_salario = salario + bonos
 
-  // se quadrienio maior que zero
-  if (quadrienio > 0.0) {
-    // calcular bonos
-    let bonos = salario * 0.01 * quadrienio
-    // calcular novo salário
-    const novo_salario = salario + bonos
-
-    // exibir resultado
-    resp1.innerText = `Quadriênio: ${quadrienio}`
-    resp2.innerText = `Salário Final R$ ${novo_salario.toFixed(2)}`
-  } else {
-    // exibir os resultado
-    resp1.innerText = `Salário Final R$ ${salario.toFixed(2)}`
-  }
+  // exibir resultado
+  resp1.innerText = `Quadriênio: ${quadrienio}`
+  resp2.innerText = `Salário Final R$ ${novo_salario.toFixed(2)}`
+  //   resp1.innerText = ''
+  //   resp2.innerText = ''
 
   e.preventDefault()
 })
