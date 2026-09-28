@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinária</title>
+    <!-- Adiciona o CSS -->
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Veterinária</h1>
+      <pre>
+      b) Elaborar um programa para uma veterinária, 
+      que leia o peso de uma ração em kg e o quanto 
+      um gato consome por dia da ração, em gramas.
+      Informe quantos dias irá durar a ração e o
+      quanto sobra da ração (em gramas).
+      </pre>
+
+      <h2>Consumo da Ração</h2>
+
+      <form>
+        <p>
+          <label for="peso">Peso da Ração(kg):</label><br />
+          <input
+            type="number"
+            id="inPeso"
+            name="peso"
+            min="0"
+            step="0.01"
+            required
+          />
+        </p>
+        <p>
+          <label for="consumo">Consumo Diário(gr):</label> <br />
+          <input
+            type="text"
+            id="inConsumo"
+            name="consumo"
+            min="0"
+            step="0.01"
+            required
+          />
+        </p>
+        <p>
+          <input type="submit" value="Calcular Consumo" />
+        </p>
+      </form>
+
+      <h2 id="outResp1"></h2>
+      <h2 id="outResp2"></h2>
+    </div>
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap03/exemplos/veterinaria/script.js"></script>
+  </body>
+</html>
