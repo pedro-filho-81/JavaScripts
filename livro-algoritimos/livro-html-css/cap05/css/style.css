@@ -1,0 +1,53 @@
+/* * = seletor universal ´zera a margin e o padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* seletor body define as caracteristicas da fonte dos elementos */
+body {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+/* estiliza o elemento h1 filho do pai hgroup */
+hgroup > h1 {
+  font-size: 38px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/* estiliza o elemento a descendente do elemento hgroup */
+hgroup a {
+  color: #c30;
+  text-decoration: none;
+}
+/* estiliza o elemento h2 irmão adjacente do elemento h1 */
+h1 ~ h2 {
+  font-size: 27px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: #090;
+}
+/* estiliza o elemento ul filho do pai nav */
+nav > ul {
+  margin-left: 50px;
+}
+/* estiliza o elemento a filho do primeiro elemento li que é filho de ul que é filho de nav */
+nav > ul > li:first-child > a {
+  color: #c60;
+  text-decoration: none;
+}
+/* estiliza o elemento a quando o usuário passa o mouse sobre ele */
+nav > ul > li:first-child > a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+/* estiliza o elemento li último filho do elemento ul filho do elemento nav */
+nav > ul > li:last-child {
+  font-size: 26px;
+  list-style-type: square;
+}
+/* estiliza o tereiro elemento li filho do elemento ul filho do elemento nav */
+nav > ul > li:nth-child(3) {
+  background: #ccc;
+}
