@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/cap04/exemplos/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Farmácia JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Farmácia JS</h1>
+      <pre>
+      b) Uma farmácia necessita de um programa que leia o 
+      total de uma compra. Exiba como resposta o nº máximo 
+      de vezes que o cliente pode parcelar essa compra e o 
+      valor de cada parcela. Considere as seguintes 
+      condições: a) cada parcela deve ser de, no mínimo, R$ 
+      20,00; b) o número máximo de parcelas permitido é 6.
+      </pre>
+
+      <h2>Farmácia</h2>
+      <h3>Para compras acima de R$ 120,00 parcelamos até 6x</h3>
+
+      <form>
+        <p>
+          <label for="inNumero">Valor da compra:</label> <br />
+          <input
+            type="number"
+            id="inNumero"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <input type="submit" value="Valor a pagar" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+        <h2 id="outResp5"></h2>
+        <h2 id="outResp6"></h2>
+        <h2 id="outResp7"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exemplos/farmacia/farmacia.js"></script>
+  </body>
+</html>
