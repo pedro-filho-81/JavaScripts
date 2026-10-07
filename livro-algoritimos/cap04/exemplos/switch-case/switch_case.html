@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case JS</title>
+    <!-- Adiciona o CSS -->
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Switch Case JS</h1>
+      <pre>
+      O script vai informar o valor da taxa 
+      de entrega de um medicamento em uma farmácia, 
+      conforme o bairro do cliente. A partir dele, 
+      fica melhor de destacar os detalhes e as regras de 
+      sintaxe dessa estrutura condicional.
+      </pre>
+
+      <h2>
+        Entregamos nos bairros: <br />Centro, Fragata, Três vendas, e Laranjal
+      </h2>
+      <form>
+        <p>
+          <label for="nome">Bairro de Entrega: </label> <br />
+          <input type="text" id="inBairro" name="bairro" required />
+        </p>
+
+        <p id="botoes">
+          <input type="submit" value="Calcular valor a Pagar" />
+          <input type="reset" id="limpar" value="Limpar Campos" />
+        </p>
+      </form>
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+      </div>
+    </div>
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap04/exemplos/switch-case/switch_case.js"></script>
+  </body>
+</html>
