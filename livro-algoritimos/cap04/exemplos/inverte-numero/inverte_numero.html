@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/cap04/exemplos/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Inverte o Número JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Inverte Número JS</h1>
+      <pre>
+      c) Elaborar um programa que leia um número 
+      que deve ser uma centena. Calcule e exiba 
+      a centena invertida. Caso o número não seja 
+      uma centena, exiba mensagem.
+      </pre>
+
+      <h2>Inverte Números</h2>
+      <h3>Digite valores entre 100 e 999</h3>
+      <form>
+        <p>
+          <label for="inNumero">Digite um valor:</label> <br />
+          <input
+            type="number"
+            id="inNumero"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <input type="submit" value="Inverte o valor" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exemplos/inverte-numero/inverte_numero.js"></script>
+  </body>
+</html>
