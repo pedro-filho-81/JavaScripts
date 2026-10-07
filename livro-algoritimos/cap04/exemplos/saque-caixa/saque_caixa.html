@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saque no Caixa Eletrônico JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Saque no Caixa Eletrônico JS</h1>
+      <pre>
+      c) Em um determinado momento do dia, apenas notas de 
+      10, 50 e 100 estão disponíveis em um terminal de caixa 
+      eletrônico. Elaborar um programa que leia um valor de 
+      saque de um cliente, verifique sua validade (ou seja, 
+      se pode ser pago com as notas disponíveis) e informe o 
+      número mínimo de notas de 100, 50 e 10 necessárias 
+      para pagar esse saque. A Figura 4.6 exemplifica uma 
+      execução do programa.
+    </pre
+      >
+
+      <h2>Saque no Caixa</h2>
+      <h3>
+        Temos apenas notas de: <br />
+        100, 50 e 10
+      </h3>
+      <form>
+        <p>
+          <label for="inNumero">Número:</label> <br />
+          <input
+            type="number"
+            id="inNumero"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+        <p>
+          <input type="submit" value="Exibir Valores para Saque" />
+          <input type="reset" value="cadastrar outro valor" />
+        </p>
+        <p>Não temos valores abaixo de R$: 10,00</p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+        <h2 id="outResp5"></h2>
+        <h2 id="outResp6"></h2>
+        <h2 id="outResp7"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exemplos/saque-caixa/saque_caixa.js"></script>
+  </body>
+</html>
