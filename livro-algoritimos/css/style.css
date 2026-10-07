@@ -6,14 +6,21 @@ body {
   background-color: rgb(66, 66, 183);
   color: white;
   width: bold;
-  width: 600px;
-  font-size: 12px;
+  width: 800px;
+  font-size: 15px;
   text-align: center;
   margin: auto;
 }
 
 pre {
   font-size: 18px;
+}
+
+img {
+  /* estiliza a imagem com: */
+  float: left; /* imagem colocada ao lato esquerdo do título */
+  height: 300px; /* altura 300 pixel */
+  width: 300px; /* largura 300 pixel também */
 }
 
 label {
@@ -27,6 +34,7 @@ input {
 
 div#resposta {
   background-color: yellow;
+  color: #000;
   width: 500px;
   margin: auto;
 }
@@ -39,10 +47,16 @@ h2#outResp1 h2#outResp2 {
   font-size: 25px;
 }
 
-h2#outResp1 {
-  color: black;
+h1 {
+  padding: 10px;
+  border-bottom-style: inset;
 }
 
-span {
-  color: rgb(234, 13, 13);
+#limpar {
+  margin-left: 8px;
+}
+
+#pais {
+  padding: 8px;
+  border-radius: 10px;
 }
