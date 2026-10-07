@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuso Horário JS</title>
+    <!-- Adiciona o CSS -->
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Programa Fuso Horário JS</h1>
+      <pre>
+      a) Sabendo que o fuso horário da França em relação 
+      ao Brasil é de + 5 horas (no horário de verão na 
+      França), elaborar um programa que leia a hora no 
+      Brasil e informe a hora na França. A Figura 4.4 
+      ilustra a tela com dados de entrada e saída do 
+      programa.
+      </pre>
+
+      <h2>Fuso Horário JS</h2>
+
+      <form>
+        <p>
+          <label for="inTime">Hora no Brasil<br />( hh/mm )</label> <br />
+          <!-- TIPO (TImE) SERVE PARA ADICIONAR HORAS:mINUTOS => (20:30) -->
+          <input
+            type="number"
+            id="inTime"
+            name="time"
+            min="0"
+            max="23.59"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+        <p>
+          <input type="submit" value="Exibir hora na França" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+      </div>
+    </div>
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap04/exemplos/fuso-horario/fuso_horario.js"></script>
+  </body>
+</html>
