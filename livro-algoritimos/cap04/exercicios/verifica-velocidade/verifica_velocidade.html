@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/cap04/exemplos/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Programa Verifica Velocidade JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Programa Verifica Velocidade JS</h1>
+
+      <pre>
+      b) Elaborar um programa que leia a velocidade permitida 
+      em uma estrada e a velocidade de um condutor. 
+      Se a velocidade for inferior ou igual à permitida, exiba 
+      “Sem Multa”. Se a velocidade for de até 20% maior que 
+      a permitida, exiba “Multa Leve”. E, se a velocidade for 
+      superior a 20% da velocidade permitida, exiba “Multa Grave”
+      </pre>
+
+      <h2>Verifica Velocidade</h2>
+      <h3>Digite a velocidade permitida e <br />a velocidade do condutor</h3>
+      <form>
+        <p>
+          <label for="inPermitida">Velocidade Permitida:</label> <br />
+          <input
+            type="number"
+            id="inPermitida"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <label for="inCondutor">Velocidade do Condutor:</label> <br />
+          <input
+            type="number"
+            id="inCondutor"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <input type="submit" value="Verificar Velocidade" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exercicios/verifica-velocidade/verifica_velocidade.js"></script>
+  </body>
+</html>
