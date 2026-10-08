@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/cap04/exemplos/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Programa Paquímetro JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Programa Paquímetro JS</h1>
+
+      <pre>
+      c) Elaborar um programa para simular um parquímetro, 
+      o qual leia o valor de moedas depositado em um terminal 
+      de estacionamento rotativo. O programa deve informar 
+      o tempo de permanência do veículo no local e o troco 
+      (se existir), como no exemplo da Figura 4.9. 
+      Se o valor for inferior ao tempo mínimo, exiba a mensagem: 
+      “Valor Insuficiente”. Considerar os valores/tempos da 
+      Tabela 4.6 (o máximo é 120 min).
+      </pre>
+
+      <h2>Paquímetro</h2>
+
+      <form>
+        <p>
+          <label for="inMoedas">Valor das moedas R$</label> <br />
+          <input
+            type="number"
+            id="inMoedas"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <input type="submit" id="btnPrincipal" value="Confirma Depósito" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exercicios/paquimerto/paquimetro.js"></script>
+  </body>
+</html>
