@@ -5,8 +5,8 @@ body {
 #container {
   background-color: rgb(66, 66, 183);
   color: white;
-  width: bold;
   width: 900px;
+  height: auto;
   font-size: 15px;
   text-align: center;
   margin: auto;
@@ -24,16 +24,17 @@ img {
 }
 
 div#questionario {
+  border-radius: 11px;
   box-sizing: flex; /* coloca os elementos em linha  */
   margin: auto; /* centraliza os elementos*/
   width: 400px; /* coloca o container com 400 pixel de largura */
-  height: 150px;
+  height: auto;
   background-color: rgba(0, 255, 255, 0.671);
 }
 
 img#inImagem {
-  width: 120px;
-  height: 130px;
+  width: 130px;
+  height: auto;
   margin-top: 8px;
   margin-left: 10px;
 }
@@ -48,13 +49,15 @@ img.alta {
   height: 200px;
   width: 180px;
 }
+
 label {
-  font-size: 20px;
+  font-size: 25px;
+  color: black;
 }
 
 input {
   padding: 5px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 div#resposta {
@@ -69,7 +72,7 @@ h2#outResp1 h2#outResp2 {
   margin: auto;
   width: 300px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h1 {
