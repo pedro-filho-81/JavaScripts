@@ -6,14 +6,14 @@ body {
   background-color: rgb(66, 66, 183);
   color: white;
   width: bold;
-  width: 800px;
+  width: 900px;
   font-size: 15px;
   text-align: center;
   margin: auto;
 }
 
 pre {
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
 img {
@@ -23,6 +23,31 @@ img {
   width: 300px; /* largura 300 pixel também */
 }
 
+div#questionario {
+  box-sizing: flex; /* coloca os elementos em linha  */
+  margin: auto; /* centraliza os elementos*/
+  width: 400px; /* coloca o container com 400 pixel de largura */
+  height: 150px;
+  background-color: rgba(0, 255, 255, 0.671);
+}
+
+img#inImagem {
+  width: 120px;
+  height: 130px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+img.normal {
+  float: left;
+  height: 300px;
+  width: 300px;
+}
+img.alta {
+  float: right;
+  height: 200px;
+  width: 180px;
+}
 label {
   font-size: 20px;
 }

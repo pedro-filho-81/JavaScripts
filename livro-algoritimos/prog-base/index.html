@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/cap05/img/livrojs.png"
+      type="image/x-icon"
+    />
     <title>Base</title>
     <!-- Adiciona o CSS -->
-    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div id="container">
@@ -16,19 +21,22 @@
 
       <h2>Título form</h2>
 
-      <form>
-        <p>
-          <label for="nome">Nome do campo 1</label> <br />
-          <input type="text" id="inNome" name="nome" required />
-        </p>
-        <p>
-          <label for="nome">Nome do campo 2</label> <br />
-          <input type="text" id="inNome" name="nome" required />
-        </p>
-        <p>
-          <input type="submit" value="Calcular valor a Pagar" />
-        </p>
-      </form>
+      <div id="questionario">
+        <img id="inImagem" src="/" alt="Aqui vai ter uma foto" />
+        <form>
+          <p>
+            <label for="nome">Nome do campo 1</label> <br />
+            <input type="text" id="inNome" name="nome" required />
+          </p>
+          <p>
+            <label for="nome">Nome do campo 2</label> <br />
+            <input type="text" id="inNome" name="nome" required />
+          </p>
+          <p>
+            <input type="submit" value="Calcular valor a Pagar" />
+          </p>
+        </form>
+      </div>
 
       <div id="resposta">
         <h2 id="outResp1"></h2>
