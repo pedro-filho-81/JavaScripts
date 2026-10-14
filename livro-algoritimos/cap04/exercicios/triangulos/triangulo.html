@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/cap04/exemplos/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Programa Lados de um Triângulo JS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Programa Lados de um Triângulo JS</h1>
+
+      <pre>
+      d) Elaborar um programa que leia três lados e 
+      verifique se eles podem ou não formar um triângulo. 
+      Para formar um triângulo, um dos lados não pode ser 
+      maior que a soma dos outros dois. Caso possam formar 
+      um triângulo, exiba também qual o tipo do triângulo: 
+      Equilátero (3 lados iguais), Isósceles (2 lados 
+      iguais) e Escaleno (3 lados diferentes). A Figura 4.10 
+      exibe um exemplo de execução do exercício.
+      </pre>
+
+      <h2>Lados de um Triângulo</h2>
+
+      <form>
+        <p>
+          <label for="inLadoA">Lado A</label> <br />
+          <input
+            type="number"
+            id="inLadoA"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <label for="inLadoB">Lado B</label> <br />
+          <input
+            type="number"
+            id="inLadoB"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="inLadoC">Lado C</label> <br />
+          <input
+            type="number"
+            id="inLadoC"
+            name="numero"
+            min="0"
+            step="0.01"
+            required
+          />
+        </p>
+
+        <p>
+          <input type="submit" id="btnPrincipal" value="Verificar Lados" />
+        </p>
+      </form>
+
+      <div id="resposta">
+        <h2 id="outResp1"></h2>
+        <h2 id="outResp2"></h2>
+        <h2 id="outResp3"></h2>
+        <h2 id="outResp4"></h2>
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/cap04/exercicios/triangulos/triangulo.js"></script>
+  </body>
+</html>
