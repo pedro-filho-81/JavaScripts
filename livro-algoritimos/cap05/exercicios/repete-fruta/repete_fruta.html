@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/cap05/img/livrojs.png"
+      type="image/x-icon"
+    />
+    <title>Programa Repete Fruta JS</title>
+    <!-- Adiciona o CSS -->
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+    <style>
+      img#inImagem {
+        width: 130px;
+        height: 170px;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Programa Repete Fruta JS</h1>
+      <pre>
+      a) Elaborar um programa que leia o nome de uma fruta e 
+      um número. O programa deve repetir a exibição do nome 
+      da fruta, de acordo com o número informado. Utilize o 
+      “*” para separar os nomes.
+      </pre>
+
+      <h2>Repete Fruta</h2>
+
+      <div id="questionario">
+        <img
+          id="inImagem"
+          src="/livro-algoritimos/cap05/img/exerc.jpg"
+          alt="Aqui vai ter uma foto"
+        />
+        <form>
+          <p>
+            <label for="inNome">Nome da Fruta</label> <br />
+            <input type="text" id="inNome" name="inNome" required autofocus />
+          </p>
+          <p>
+            <label for="inNumero">Qtd. de Repetição</label> <br />
+            <input type="number" id="inNumero" name="inNumero" required />
+          </p>
+          <p>
+            <input type="submit" value="Exibir Frutas" />
+          </p>
+        </form>
+      </div>
+
+      <div id="resposta">
+        <pre id="outResp1"></pre>
+        <!-- <h2 id="outResp2"></h2> -->
+      </div>
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap05/exercicios/repete-fruta/repete_fruta.js"></script>
+  </body>
+</html>
