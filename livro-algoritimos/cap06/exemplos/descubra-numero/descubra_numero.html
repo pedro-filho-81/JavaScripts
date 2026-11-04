@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" href="/livro-algoritimos/cap06/img/livrojs.png" type="image/x-icon">
+    
+    <title>Jogo Descubra o Número</title>
+    
+    <link rel="stylesheet" href="/livro-algoritimos/css/style.css" />
+    
+    <!-- ESTILIZA A ImAGEm DO PROGRAmA -->
+    <style>
+      img#inImagem {
+        width: 130px;
+        height: 100px;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>    
+  <body>
+    <div id="container">
+
+      <h1>Jogo Descubra o Número</h1>
+      
+      <h2>Questionário</h2>
+      
+      <pre>
+      Programa Descubra o Número gera um número aleatório a 
+      cada novo jogo. O programa utiliza a função matemática 
+      Math.random(). para gerar um número aleatório entre 1 
+      e 100 que deve ser descoberto pelo usuário. Para 
+      evitar que o jogador aposte um número 2x (e perca uma 
+      chance), faz-se uso do método includes(). O código 
+      HTML desse jogo exibe um campo de entrada e 
+      três linhas para a exibição de mensagens: o número de 
+      erros e o vetor erros, o número de chances ainda 
+      disponíveis para o jogador e as dicas para auxiliar na 
+      descoberta do número.
+      </pre>
+
+      <h2>Descrubra O Número</h2>
+      <div id="questionario">
+        <img
+          id="inImagem"
+          src="/livro-algoritimos/cap06/img/ex6_2.jpg"
+          alt="Descubra o número"
+        />
+        <form>
+          <p>
+            <label for="inValor"
+              >Digite um Número:</label
+            >
+            <br />
+            <input
+              type="number"
+              id="inValor"
+              name="inValor"
+              min="1"
+              max="100"
+              required
+              autofocus
+            />
+          </p>
+          <p>
+            <input type="submit" value="Apostar" id="btnSubmit" />
+            <input type="button" value="Jogar Novamente" id="btnNovo" class="exibe" >
+          </p>
+        </form>
+      </div>
+
+      <!-- RESPOSTAS DO JAVASCRIPT  -->
+      <div id="resposta">
+        <h2>Erros: <span id="outErros">0</span> </h2>
+        <h2>Chances: <span id="outChances">6</span> </h2>
+        <h2 id="outDicas" class="italico">Dica: É um número entre 1 e 100</h>
+      </div>      
+    </div>
+
+    <!-- Adiciona o JavaScript -->
+    <script src="/livro-algoritimos/cap06/exemplos/descubra-numero/descubra_numero.js"></script>
+  </body>
+</html>
