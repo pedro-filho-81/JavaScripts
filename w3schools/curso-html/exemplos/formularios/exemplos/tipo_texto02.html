@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-Campos Para Texto</title>
+    <style>
+      #container {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #formulario {
+        background-color: lightblue;
+        font-size: 20px;
+        margin: 0 300px;
+      }
+      input {
+        font-size: 15px;
+        padding: 10px;
+      }
+      p {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>02-Formulário Html</h1>
+    <p>
+      Um formulário HTML <strong>é usado para coletar dados</strong> inseridos
+      pelo usuário. <br />Esses dados são geralmente enviados a um servidor para
+      processamento.
+    </p>
+    <hr />
+
+    <h2>O elemento &lt;form></h2>
+
+    <p>
+      O elemento HTML <strong>&lt;form></strong> é usado para criar um
+      formulário HTML para entrada de dados pelo usuário:
+    </p>
+    <hr />
+
+    <h2>O elemento &lt;label>&lt;/label></h2>
+    <p>
+      A tag <strong>&lt;label></strong> define um rótulo para vários elementos
+      de formulário.
+    </p>
+    <hr />
+
+    <h2>O elemento &lt;input></h2>
+    <p>
+      O elemento HTML <strong>&lt;input></strong> é o elemento de formulário
+      mais utilizado.
+    </p>
+    <p>
+      Um elemento <strong>&lt;input></strong> pode ser exibido de diversas
+      maneiras, dependendo do atributo (type).
+    </p>
+    <hr />
+
+    <h2>Campos de texto</h2>
+    <p>
+      Define <strong>&lt;input type="text"></strong> um campo de entrada de
+      texto de linha única.
+    </p>
+    <hr />
+
+    <h2>Botões de opção</h2>
+
+    <p>
+      O símbolo <strong>&lt;input type="radio"></strong> define um botão de
+      opção.
+    </p>
+
+    <p>
+      Os botões de opção permitem que o usuário selecione
+      <strong>UMA</strong> dentre um número limitado de opções.
+    </p>
+    <hr />
+
+    <h2>Cria o Formulário de Botões de Opção</h2>
+    <div id="container">
+      <pre>
+    &lt;div id="container">
+      &lt;h3>Botões de Opções.&lt;/h3>
+      &lt;p>Escolha seu idioma web favorito.&lt;/p>
+      &lt;form>
+        &lt;input type="radio" id="html" name="fav_language" value="HTML" />
+        &lt;label for="html">HTML&lt;/label>
+        &lt;input type="radio" id="css" name="fav_language" value="CSS" />
+        &lt;label for="css">CSS&lt;/label>
+        &lt;input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        &lt;label for="javascript">JavaScript&lt;/label>
+      &lt;/form>
+    </pre
+      >
+    </div>
+
+    <hr />
+
+    <div id="formulario">
+      <h3>Botões de Opções.</h3>
+      <p>Escolha seu idioma web favorito.</p>
+
+      <form>
+        <input
+          type="radio"
+          id="html"
+          name="fav_language"
+          value="HTML"
+          autofocus
+        />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label><br />
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javascript">JavaScript</label>
+      </form>
+    </div>
+    <br />
+    <hr />
+
+    <div id="container">
+      <h3>Programa para criar o formulário</h3>
+      <pre>
+    &lt;form action="#">
+      &lt;p>
+        &lt;label for="inNome">Nome: &lt;/label>&lt;br />
+        &lt;input type="text" id="inNome" name="inNome" required autofocus />
+      &lt;/p>
+      &lt;p>
+        &lt;label for="inSobrenome">Sobrenome&lt;/label>&lt;br />
+        &lt;input type="text" id="inSobrenome" name="inSobrenome" required />
+      &lt;/p>
+      &lt;p>
+        &lt;mark>OBS: &lt;/mark> A lagrura dos campos por padrão são para 20
+        caracteres.
+      &lt;/p>
+    &lt;/form>
+    </pre
+      >
+    </div>
+
+    <div id="formulario">
+      <h2>Formulário</h2>
+      <form action="#">
+        <p>
+          <label for="inNome">Nome: </label><br />
+          <input type="text" id="inNome" name="inNome" required />
+        </p>
+        <p>
+          <label for="inSobrenome">Sobrenome</label><br />
+          <input type="text" id="inSobrenome" name="inSobrenome" required />
+        </p>
+        <p>
+          <mark>OBS: </mark> A lagrura dos campos por padrão são para 20
+          caracteres.
+        </p>
+      </form>
+      <br />
+      <hr />
+    </div>
+  </body>
+</html>
