@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Atrubuto Name</title>
+    <style>
+      p,
+      pre,
+      input {
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+      }
+      form {
+        padding: 10px;
+        width: 300px;
+        background-color: aquamarine;
+        color: #000;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>O atributo Name para &lt;input></h1>
+    <p>
+      Observe que cada campo de entrada deve ter um atributo
+      <strong>name</strong> para ser submetido.
+    </p>
+    <p>
+      Se o atributo <strong>name</strong> for omitido, o valor do campo de
+      entrada não será enviado.
+    </p>
+
+    <pre>
+    &lt;form action="#">
+      &lt;label for="fname">Primeiro Nome:&lt;/label>
+      &lt;input type="text" id="fname" <strong>name="fname"</strong> value="João" />
+      &lt;input type="submit" <strong>name="fname2"</strong> value="Enviar" />
+    &lt;/form>
+    </pre>
+
+    <h3>Exemplo</h3>
+
+    <p>
+      Este exemplo não enviará o valor do campo de entrada
+      <strong>"Nome":</strong>
+    </p>
+
+    <form action="#">
+      <label for="fname">Primeiro Nome:</label><br />
+      <input type="text" id="fname" name="fname" value="João" /><br />
+      <input type="submit" name="fname2" value="Enviar" />
+    </form>
+  </body>
+</html>
