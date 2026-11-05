@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão Enviar</title>
+    <style>
+      p,
+      pre,
+      input {
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+      }
+      form {
+        padding: 10px;
+        width: 300px;
+        background-color: aquamarine;
+        color: #000;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>O Botão Enviar</h1>
+    <p>
+      Define <strong>&lt;input type="submit" /></strong> um botão para enviar os
+      dados do formulário a um manipulador de formulário.
+    </p>
+    <p>
+      O manipulador de formulários é normalmente um arquivo no servidor com um
+      <strong>script</strong> para processar os dados de entrada.
+    </p>
+
+    <p>
+      O manipulador de formulário é especificado no atributo
+      <strong>action</strong> do formulário.
+    </p>
+
+    <pre>
+    &lt;form <strong>action="/action.php"</strong>>
+      &lt;label for="fname">Primeiro nome:&lt;/label>
+      &lt;input type="text" id="fname" name="fname" value="João" />
+      &lt;label for="lname">Último nome:&lt;/label>
+      &lt;input type="text" id="lname" name="lname" value="Douglas" />
+      &lt;input type="submit" value="Enviar" />
+    &lt;/form>
+    </pre>
+    <h2>Exemplo</h2>
+    <p>Um formulário com um botão de envio:</p>
+
+    <form
+      action="/w3schools/curso-html/exemplos/formularios/exemplos/action.php"
+    >
+      <label for="fname">Primeiro nome:</label><br />
+      <input type="text" id="fname" name="fname" value="João" /><br />
+      <label for="lname">Último nome:</label><br />
+      <input type="text" id="lname" name="lname" value="Douglas" /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
